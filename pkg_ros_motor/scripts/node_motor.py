@@ -8,7 +8,7 @@ from std_msgs.msg import Int16
 
 PWM_Output = 188
 
-pub = rospy.Publisher('/PWM_Values',Int16,queue_size=100)
+pub = rospy.Publisher('PWM_Values',Int16,queue_size=100)
 
 def pub_pwm():
     r = rospy.Rate(1) # 1hz 
